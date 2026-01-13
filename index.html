@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تحميل الفيديو</title>
+</head>
+<body style="text-align:center;">
+
+<h2>تحميل الفيديوهات</h2>
+
+<input type="text" id="url" placeholder="ضع رابط الفيديو هنا" style="width:80%;padding:10px;">
+<br><br>
+<button onclick="go()">تحميل</button>
+
+<script>
+function go(){
+ let u = document.getElementById("url").value;
+ window.open("https://snapsave.app/?url="+u);
+}
+</script>
+
+</body>
+</html>
